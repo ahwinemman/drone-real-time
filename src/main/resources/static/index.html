@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+      <title>Drone Real Time Location</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="/css/main.css"/>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      
+  </head>
+  <body>
+    <noscript>
+      <h2>Sorry! Your browser doesn't support Javascript</h2>
+    </noscript>
+
+    <div class="container">
+
+        <div class="jumbotron mt-3">
+            <h1 class="center">Real-Time Drone Location</h1>
+        </div>
+
+        <div>
+            <div class="input-group center margin-btm">
+                <input type="text" class="form-control margin-sm" name="filterText" placeholder="Enter UniqueId"/>
+                <span class="input-group-btn">
+                    <button disabled=false class="btn btn-primary"> Search </button>
+                </span>
+
+            </div>
+
+        </div>
+
+        <div id="table-container">
+            <table id="loc-table" class="table" align="center" >
+               <thead class="thead-dark">
+                   <tr>
+                       <th scope="col" >Unique ID </th>
+                       <th scope="col" >Previous Location(Latitude/Longitude)</th>
+                       <th scope="col" >Current Location(Latitude/Longitude)</th>
+                       <th scope="col" >Speed</th>
+                   </tr>
+               </thead>
+               
+                               
+                
+                </tbody>
+                <tbody>
+                
+                </tbody>
+            </table>
+        </div>    
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="/js/main.js"></script>
+  </body>
+</html>

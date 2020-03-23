@@ -1,0 +1,30 @@
+.center {
+  text-align: center;
+}
+
+.input-group {
+  margin: auto;
+  max-width: 30%;
+}
+
+.margin-sm {
+  margin-right: 10px;
+}
+
+.margin-btm {
+    margin-bottom: 40px;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+.error-text{
+  text-align: center;
+  font-weight: 250;
+  color: red;
+}
+
+.error {
+    background-color: red;
+    color: white;
+}
